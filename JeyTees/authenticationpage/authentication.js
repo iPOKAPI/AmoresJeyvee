@@ -154,28 +154,31 @@ export async function LoginUser(username, password) {
         (user.Email.toLowerCase() === username.toLowerCase() || user.Username.toLowerCase() === username.toLowerCase().trim()) && // Check if email or username matches
         user.Password === password);    // Check if password matches
 
-   // Check if the user exists in the data
-if (user !== -1) {
-    if (data[user].Status !== "1") {
-        // Proceed with status update for the user
-        const Matcheduser = {
-            Userid: data[user].Userid,
-            Status: "1" // Set status to 1, meaning logged in
-        };
-        
-        const updateStatus = await Userchangedetail(Matcheduser); // Function to update status
+    // If a matching user is found
+    if (user !== -1) {     
+        if(data[user].Status != "1"){
+            
+            const Matcheduser = {
+                Userid: data[user].Userid,
+                Status: "1"
+            }
+            const updateStatus = await Userchangedetail(Matcheduser);
 
-        if (updateStatus) {
-            // Redirect to the user homepage with their Userid in the URL
-            location.replace(`../userhomepage/index.html?Userid=${Matcheduser.Userid}`);
-        } else {
-            return alert("Fetching user data failed.");
+            if (updateStatus) {                        
+                location.replace(`../userhomepage/index.html?Userid=${Matcheduser.Userid}`);            
+            }
+            else{
+                return alert("Fetching user data failed.");
+            }
         }
-    } else {
-        return alert("The account is currently logged in");
+        else{
+            return alert("The account are currently login");
+        }
+    } 
+    else {
+        // If no matching user is found                   
+        alert("Invalid username or password."); // Log error message to the console
+        
+        return null; // Return null if login fails
     }
-} else {
-    return alert("User not found or incorrect credentials");
-    return null;
-}
 };
