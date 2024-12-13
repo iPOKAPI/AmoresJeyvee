@@ -1,0 +1,122 @@
+[
+  {
+    "Userid": "1",
+    "FirstName": "Jv",
+    "LastName": "Amores",
+    "Address": "300 WHat, You Pierre, Do you wanna come out come out here",
+    "PhoneNumber": "09123454321",
+    "Email": "jeyvee@gmail.com",
+    "Birthdate": "2006-11-01",
+    "Username": "jv",
+    "Password": "@jeyvee123",
+    "Status": "0",
+    "Cart": [],
+    "Delivered": [
+      {
+        "Orderid": 1,
+        "Date": "2024-11-25T08:40:57.196Z",
+        "Subtotal": "2461.98",
+        "Tax": "369.30",
+        "Total": "2831.28",
+        "Item": [
+          {
+            "Itemid": 1,
+            "Name": "Real Madrid 24/25 Third Jersey",
+            "Quantity": 2,
+            "Size": "Medium",
+            "Price": 1730.99
+          },
+          {
+            "Itemid": 24,
+            "Name": "PUMA x THE BROOKLYN CIRCUS",
+            "Quantity": 1,
+            "Size": "Medium",
+            "Price": 4699.99
+          }
+        ]
+      },
+      {
+        "Orderid": 2,
+        "Date": "2024-11-26T00:27:49.320Z",
+        "Subtotal": "1999.98",
+        "Tax": "300.00",
+        "Total": "2299.98",
+        "Item": [
+          {
+            "Itemid": 23,
+            "Name": "Scuderia Ferrari Desert Sun",
+            "Quantity": 1,
+            "Size": "Large",
+            "Price":4940.99
+          },
+          {
+            "Itemid": 21,
+            "Name": "A$AP ROCKY x PUMA",
+            "Quantity": 1,
+            "Size": "Small",
+            "Price": 8840.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Userid": "2",
+    "FirstName": "",
+    "LastName": "",
+    "Address": "",
+    "PhoneNumber": "",
+    "Email": "k88@gmail.com",
+    "Birthdate": "",
+    "Username": "PlayboiCarti",
+    "Password": "@Ken12345",
+    "Status": "0",
+    "Cart": [],
+    "Delivered": []
+  },
+  {
+    "Userid": "3",
+    "FirstName": "",
+    "LastName": "",
+    "Address": "",
+    "PhoneNumber": "",
+    "Email": "IGit123@gmail.com",
+    "Birthdate": "",
+    "Username": "lordy",
+    "Password": "@lordy123",
+    "Status": "0",
+    "Cart": [],
+    "Delivered": [
+      {
+        "Orderid": 3,
+        "Date": "2024-11-26T00:50:15.629Z",
+        "Subtotal": "4900.36",
+        "Tax": "735.05",
+        "Total": "5635.41",
+        "Item": [
+          {
+            "Itemid": 21,
+            "Name": "A$AP ROCKY x PUMA",
+            "Quantity": 3,
+            "Size": "Medium",
+            "Price": 8840.99
+          },
+          {
+            "Itemid": 24,
+            "Name": "PUMA x THE BROOKLYN CIRCUS",
+            "Quantity": 1,
+            "Size": "Medium",
+            "Price": 4699.99
+          },
+          {
+            "Itemid": 3,
+            "Name": "Nike",
+            "Quantity": 9,
+            "Size": "Medium",
+            "Price": 1599
+          }
+        ]
+      }
+    ]
+  }
+]
